@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f5f5; /* Light gray minimalistic background */
+    color: #333; /* Dark gray text for better readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Headings */
+h1, h4 {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #333; /* Dark gray color for text */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+/* Links */
+a {
+    color: #2575fc; /* A subtle blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #333; /* Dark gray text on hover */
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+form {
+    background: #ffffff; /* White background for the form for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    animation: slideIn 1s ease-in-out;
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px;
+    background: #f9f9f9; /* Very light background for input fields */
+    color: #333; /* Dark text inside the input */
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    background: #e8e8e8; /* Slightly darker background when focused */
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #2575fc; /* Subtle blue background for button */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #1d5bc7; /* Darker blue when hovered */
+    transform: scale(1.05);
+}
+
+/* Table for Dashboard (Optional for future use) */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: #ffffff; /* White background for tables */
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    color: #333; /* Dark gray text */
+    border: 1px solid #ccc; /* Light border color */
+}
+
+table th {
+    background: #f0f0f0; /* Light background for table headers */
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9; /* Very light background for even rows */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Additional Link Effects */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    animation: fadeIn 1.5s ease-in-out;
+}
